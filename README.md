@@ -1,1 +1,3 @@
-# V.ICTWD_Optistyle-v5.1_sprint6_studentversie
+# Projecten tegelijktijdig starten
+Configureer via Project > Configure Startup Projects > Multiple Startup Projects. 
+Zorg dat MailAPI, API en SPA starten.

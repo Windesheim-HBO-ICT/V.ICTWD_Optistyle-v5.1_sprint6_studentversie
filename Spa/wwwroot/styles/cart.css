@@ -1,0 +1,118 @@
+﻿.cart-section h1 {
+    margin-bottom: 1rem;
+}
+
+.cart-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.cart-items {
+    overflow-x: auto;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background-color: #161720;
+}
+
+    .cart-table thead {
+        background-color: var(--hover-clr);
+    }
+
+    .cart-table th,
+    .cart-table td {
+        padding: 0.75rem 1rem;
+        text-align: left;
+        border-bottom: 1px solid var(--line-clr);
+        font-size: 0.95rem;
+    }
+
+    .cart-table tbody tr:nth-child(even) {
+        background-color: #151623;
+    }
+
+.cart-product-name {
+    font-weight: 500;
+}
+
+.cart-summary {
+    border-radius: 0.75rem;
+    border: 1px solid var(--line-clr);
+    padding: 1.5rem 1.25rem;
+    background-color: #151623;
+}
+
+    .cart-summary h2 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+.cart-summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.cart-discount-row {
+    color: var(--secondary-text-clr);
+    font-size: 0.9rem;
+}
+
+.cart-total-row {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--line-clr);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.cart-checkout-button {
+    width: 100%;
+    margin-top: 1.25rem;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    background-color: var(--accent-clr);
+    color: var(--text-clr);
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+    .cart-checkout-button:hover {
+        background-color: var(--accent-hover-clr);
+        transform: translateY(-1px);
+    }
+
+    .cart-checkout-button:focus {
+        outline: 2px solid var(--focus-clr);
+        outline-offset: 2px;
+    }
+
+.cart-premium-note {
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    color: var(--secondary-text-clr);
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+    .cart-layout {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .cart-summary {
+        padding: 1.25rem 1rem;
+    }
+}

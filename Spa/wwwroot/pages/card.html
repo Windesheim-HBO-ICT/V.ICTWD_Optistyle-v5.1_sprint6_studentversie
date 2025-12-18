@@ -1,0 +1,38 @@
+<style>
+  .glass-card {
+    font-family: 'Arial', sans-serif;
+    background: #11121a;
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    margin-bottom: 15px;
+    border-bottom: #42434a 1px solid;
+  }
+
+  .glass-card img {
+    width: 100%;
+  }
+
+  .glass-card button {
+    cursor: pointer;
+    background: #e6e6ef;
+    color: #11121a;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+</style>
+
+<div class="glass-card">
+  <img />
+  <div>
+    <h3></h3>
+    <div class="info">
+      <p><slot name="designer"></slot></p>
+      <p><slot name="style"></slot></p>
+      <p><slot name="description"></slot></p>
+    </div>
+    <button id="toggle-info">Verberg details</button>
+  </div>
+</div>

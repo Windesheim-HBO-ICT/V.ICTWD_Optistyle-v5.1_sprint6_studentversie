@@ -416,3 +416,11 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+/MailApi/appsettings.Development.json
+/API/optistyle.db
+/API/optistyle.db-shm
+/API/optistyle.db-wal
+/API/auth.db
+/API/auth.db-shm
+/API/auth.db-wal
+/Spa/appsettings.Development.json

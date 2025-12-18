@@ -1,0 +1,50 @@
+<main>
+    <div class="container">
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Heeft u vragen of opmerkingen?</p>
+            <p>Neem dan gerust contact met ons op.</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" /></svg>&nbsp;0900-8899</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" /></svg>&nbsp;info@optistyle.nl</p>
+        </section>
+        <section id="terugbellen">
+            <h2>Terugbelverzoek</h2>
+            <p>Door drukte in de winkel zijn wij soms helaas niet in de gelegenheid om de telefoon op te nemen. Indien gewenst kunt u hieronder een terugbelverzoek achterlaten.</p>
+            <form id="callbackForm" method="post" class="callback-form" novalidate>
+                <!-- Honeypot veld (verborgen) -->
+                <div style="display:none;">
+                    <input autocomplete="off" tabindex="-1" type="text" id="MiddleName" name="MiddleName" value="" />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="Name">Voor- en achternaam</label>
+                    <input class="form-input" inputmode="text" maxlength="50" placeholder="Annie Hendriks" aria-describedby="nameHelp" type="text" data-val="true" data-val-length="Maximaal 50 tekens." data-val-length-max="50" data-val-regex="Alleen letters en spaties zijn toegestaan." data-val-regex-pattern="^[A-Za-z&#xC0;-&#xD6;&#xD8;-&#xF6;&#xF8;-&#xFF;\s]&#x2B;$" data-val-required="Vul uw voor- en achternaam in." id="Name" name="Name" value="" />
+                    <span id="nameHelp" class="sr-only">
+                        Vul uw voor- en achternaam in (letters en spaties, max. 50).
+                    </span>
+                    <span class="validation-error field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true" />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="Phone">Telefoonnummer</label>
+                    <input class="form-input" inputmode="tel" pattern="^\+?[0-9]{1,15}$" maxlength="16" placeholder="0900-8899" aria-describedby="phoneHelp" type="tel" data-val="true" data-val-regex="Vul een geldig telefoonnummer in (max. 15 cijfers, optioneel &#x27;&#x2B;&#x27; aan het begin)." data-val-regex-pattern="^\&#x2B;?[0-9]{1,15}$" data-val-required="Vul uw telefoonnummer in." id="Phone" name="Phone" value="" />
+                    <span id="phoneHelp" class="sr-only">
+                        Alleen cijfers, optioneel een '+' aan het begin (max. 15 cijfers).
+                    </span>
+                    <span class="validation-error field-validation-valid" data-valmsg-for="Phone" data-valmsg-replace="true" />
+                </div>
+
+                <button type="submit" class="submit-button">Verstuur</button>
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8MiIHI70gupMuA2Xc_JvxhBWdxgCWDlSuiTlknlMDGqg61ca4uoNP2lNL4Pm63WvoEJzE68tEXEZ2VRSn10PX2eI9v1hjL4YI4hGFuCTlXE8wmxneO1UMwGZ4A9_O3ish9_L9cXeCZ2_8G-S_nK-Gbs" />
+            </form>
+
+            <div id="formResult" class="form-result" aria-live="polite"></div>
+
+        </section>
+        <section id="locaties">
+            <h2>Locaties</h2>
+            <p>U vindt de winkel aan de Roggestraat 25 in Zwolle. Parkeren kunt u het best doen in de parkeergarage aan de Pletterstraat.</p>
+            <a href="https://www.q-park.nl/nl-nl/parkeren/zwolle/centrum/" target="Q-Park"><img src="/image/parkeren.png" alt="Google maps met de locatie van de desbetreffende parkeergarage" width="300" height="300"></a>
+        </section>
+    </div>
+</main>

@@ -1,0 +1,125 @@
+﻿.product-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.product a {
+    text-decoration: none;
+    color: var(--text-clr);
+    background-color: var(--accent-clr);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.product a:hover {
+    background-color: var(--accent-hover-clr);
+    color: var(--text-clr);
+}
+
+.product a:focus {
+    outline: 2px solid var(--focus-clr);
+    outline-offset: 2px;
+}
+
+.delivery-info {
+    font-size: 16px;
+    color: #787878;
+    font-weight: 600;
+    display: flex;
+    margin-top: 1.0em;
+    transition: .2s ease;
+}
+
+h1 {
+    margin-bottom: 0.5em;
+    color: var(--text-clr);
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 1em auto;
+    touch-action: pan-y;
+}
+
+.slides {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 150px;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+
+.slide.active {
+    opacity: 1;
+    pointer-events: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.slideshow-nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.slideshow-nav .prev,
+.slideshow-nav .next {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: #ccc;
+    border-radius: 50%;
+    border: none;
+    color: #333;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 8px;
+    transition: background 0.3s;
+}
+
+.slideshow-nav .prev:hover,
+.slideshow-nav .next:hover {
+    background: #333;
+    color: #fff;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 1em;
+    color: var(--text-clr);
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: var(--accent-clr);
+}
+
+.back-link svg {
+    margin-right: 0.5em;
+    fill: var(--text-clr);
+    transition: fill 0.3s ease;
+    vertical-align: unset;
+    display: inline-block;
+    height: 1em;
+    width: auto;
+}

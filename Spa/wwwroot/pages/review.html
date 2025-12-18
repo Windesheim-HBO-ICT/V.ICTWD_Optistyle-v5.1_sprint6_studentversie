@@ -1,0 +1,48 @@
+<main>
+  <div class="container">
+    <section id="review-achterlaten">
+        <h2>Laat een review achter</h2>
+        <p>We horen graag wat u van onze dienstverlening vindt. Vul onderstaand formulier in om een review achter te laten.</p>
+
+        <form id="reviewForm" method="post" class="review-form" novalidate>
+            <div class="form-group">
+                <label for="FullName" class="form-label"></label>
+                <input id="FullName"  class="form-input" inputmode="text" maxlength="100" placeholder="Annie Hendriks" aria-describedby="fullNameHelp" />
+                <span id="fullNameHelp" class="sr-only">Vul uw volledige naam in (letters en spaties, max. 100).</span>
+            </div>
+
+            <!--Studentopdracht: e-mailadres verwijderen, mogen studenten toevoegen -->
+            <div class="form-group">
+                <label for="Email" class="form-label"></label>
+                <input id="Email"  class="form-input" type="email" inputmode="email" maxlength="100" placeholder="voorbeeld@email.nl" aria-describedby="emailHelp" />
+                <span id="emailHelp" class="sr-only">Vul een geldig e-mailadres in.</span>
+            </div>
+            <!-- Studentopdracht 
+               Lighthouse geeft 100 punten voor toegankelijkheid, maar toch werkt onderstaande selectbox (op chrome) niet goed met de screenreader.
+               Studenten mogen dit zelf uitproberen en nadenken over een passende oplossing (sparren met GenAI is toegestaan).
+            -->
+            <div class="form-group">
+                <label for="Rating" class="form-label">Beoordeling (1 = slecht, 5 = uitstekend)</label>
+                <select id="Rating" class="form-input" aria-describedby="ratingHelp">
+                    <option value="">-- Kies een beoordeling --</option>
+                    <option value="1">1 - Slecht</option>
+                    <option value="2">2</option>
+                    <option value="3">3 - Gemiddeld</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Uitstekend</option>
+                </select>
+                <span id="ratingHelp" class="sr-only">Kies een cijfer van 1 tot en met 5.</span>
+            </div>
+
+            <div class="form-group">
+                <label for="Comment" class="form-label"></label>
+                <textarea id="Comment" class="form-input" rows="5" maxlength="1000" placeholder="Beschrijf uw ervaring..." aria-describedby="commentHelp"></textarea>
+                <span id="commentHelp" class="sr-only">Geef eventueel een toelichting bij uw beoordeling (max. 1000 tekens).</span>
+            </div>
+
+            <button type="submit" class="submit-button">Verstuur review</button>
+        </form>
+    </section>
+    <div id="formResult" class="form-result" aria-live="polite"></div>
+  </div>
+</main>
