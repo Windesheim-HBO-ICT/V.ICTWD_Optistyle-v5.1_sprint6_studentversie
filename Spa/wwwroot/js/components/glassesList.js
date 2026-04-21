@@ -7,7 +7,7 @@ export async function renderGlassesList() {
     data.forEach(item => {
         const productLink = document.createElement("a");
         productLink.className = "product-link";
-        productLink.href = `/brillen/details/${item.sku}`;
+        productLink.href = `/glasses/details/${item.sku}`;
         productLink.innerHTML = `
                      <div class="product">  
                         <img src="${item.imageUrl}" alt="${item.imageAlt}" class="responsiveImage" />
