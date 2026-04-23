@@ -1,7 +1,11 @@
 ﻿# Setup
-Voer de volgende commando's uit in de Package Manager Console voordat je de API voor het eerst start.
+Voer de volgende commando's uit in de **Package Manager Console** voordat je de API voor het eerst start.
 Voor het aanmaken van de database optistyle.db: `update-database -Context OptistyleDbContext`
-Voor het aanmaken van de authenticatie database auth.db:`update-database InitAuthDb -Context AuthDbContext`
+Voor het aanmaken van de authenticatie database auth.db:`update-database InitAuthDb -Context AuthDbContext`. 
+
+Eventueel kun je via de **terminal** deze alternatieve commands gebruiken:
+- `dotnet ef database update --project API --context OptistyleDbContext`
+- `dotnet ef database update --project API --context AuthDbContext`
 
 # Optistyle Database
 De Optistyle database wordt automatisch geseed met enkele producten wanneer je de API voor het eerst start.
